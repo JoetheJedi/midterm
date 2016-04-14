@@ -12,7 +12,10 @@ def computeMinimumPayment( balance ):
     if balance*.021>10:
         balance=balance*.021
         return balance
-    else:
+    elif balance<10:
+        balance=balance
+        return balance
+    elif balance*.021<10:
         balance=10
         return balance
-
+  
